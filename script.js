@@ -83,10 +83,25 @@ function createEquations() {
 //   itemContainer.appendChild(bottomSpacer);
 // }
 
+//  Displays 3, 2, 1, GO!
+function coundownStart() {
+  countdown.textContent = '3';
+  setTimeout(() => {
+    countdown.textContent = '2';
+  }, 1000);
+  setTimeout(() => {
+    countdown.textContent = '1';
+  }, 2000);
+  setTimeout(() => {
+    countdown.textContent = 'GO!';
+  }, 1000);
+}
+
 // Navigate from Splash Page to Countdown Page
 function showCountdown() {
   countdownPage.hidden = false;
   splashPage.hidden = true;
+  coundownStart();
 }
 
 // Get the value from our selected radio button
