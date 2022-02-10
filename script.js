@@ -105,7 +105,9 @@ function selectQuestionAmount(e) {
   e.preventDefault();
   questionAmount = getRadioValue();
   console.log('question amount:', questionAmount);
-  showCountdown();
+  if (questionAmount) {
+    showCountdown();
+  }
 }
 
 startForm.addEventListener('click', () => {
