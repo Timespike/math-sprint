@@ -94,7 +94,7 @@ function coundownStart() {
   }, 2000);
   setTimeout(() => {
     countdown.textContent = 'GO!';
-  }, 1000);
+  }, 3000);
 }
 
 // Navigate from Splash Page to Countdown Page
